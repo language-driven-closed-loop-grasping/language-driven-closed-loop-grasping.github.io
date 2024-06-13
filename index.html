@@ -172,81 +172,99 @@
 </section>
 <!-- End teaser video -->
 
+<!-- Method -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Method</h2>
+
+      <div class="columns is-vcentered  is-centered">
+        <img src="./static/images/flowchart.png" alt="method" />
+        </br>
+      </div>
+      <br>
+      <h2 class="subtitle has-text-centered">
+        Our method involves the three main modules: language-driven object detection, real-time object pose localization, and online trajectory optimization (MP-TrajOpt).
+        Consider a scenario in a workshop where a human instructs a robot to grasp a tool with a known CAD model and place it in a predefined location. First, the language-driven object detection module processes the image to determine the 2D location of the tool and generate a binary mask.
+         This mask, combined with the CAD model, is used by the real-time object pose localization module to estimate the initial pose of the tool. The pose is then refined using a linear Kalman filter for smoothness.
+          Finally, the online trajectory optimization module plans and executes the grasp and placement actions, ensuring smooth and collision-free movements. 
+      </h2>
+        
+      </div>
+    </div>
+  </section>
+<!--End Method -->
+
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Experiment</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-blue-block">
-          <video poster="" id="blue-block" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/RAL-blue-block.mp4"
-                    type="video/mp4">
+      <div id="results-grid" class="columns is-multiline">
+        <div class="column is-one-third">
+          <video poster="" id="metal" autoplay controls muted loop playsinline>
+            <source src="./static/videos/video-RAL-submission_1.mp4" type="video/mp4">
           </video>
+          <p class="title is-5">Prompt:"Grasp the metal part"</p>
         </div>
-        <div class="item item-metal">
-          <video poster="" id="metal" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/video-RAL-submission_1.mp4"
-                    type="video/mp4">
+        <div class="column is-one-third">
+          <video poster="" id="orange-block" autoplay controls muted loop playsinline>
+            <source src="./static/videos/video-RAL-submission_2.mp4" type="video/mp4">
           </video>
+          <p class="title is-5">Prompt:"Grasp the orange block"</p>
         </div>
-        <div class="item item-orange-block">
-          <video poster="" id="orange-block" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/video-RAL-submission_2.mp4"
-                    type="video/mp4">
+        <div class="column is-one-third">
+          <video poster="" id="plier" autoplay controls muted loop playsinline>
+            <source src="./static/videos/video-RAL-submission_3.mp4" type="video/mp4">
           </video>
+          <p class="title is-5">Prompt:"Grasp the plier"</p>
         </div>
-        <div class="item item-plier">
-          <video poster="" id="plier" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/video-RAL-submission_3.mp4"
-                    type="video/mp4">
+        <div class="column is-one-third">
+          <video poster="" id="scissor" autoplay controls muted loop playsinline>
+            <source src="./static/videos/video-RAL-submission_4.mp4" type="video/mp4">
           </video>
+          <p class="title is-5">Prompt:"Grasp the scissor"</p>
         </div>
-        <div class="item item-scissor">
-          <video poster="" id="scissor" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/video-RAL-submission_4.mp4"
-                    type="video/mp4">
+        <div class="column is-one-third">
+          <video poster="" id="stripper" autoplay controls muted loop playsinline>
+            <source src="./static/videos/video-RAL-submission_5.mp4" type="video/mp4">
           </video>
+          <p class="title is-5">Prompt:"Grasp the line stripper"</p>
         </div>
-        <div class="item item-stripper">
-          <video poster="" id="stripper" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/video-RAL-submission_5.mp4"
-                    type="video/mp4">
+        <div class="column is-one-third">
+          <video poster="" id="timer" autoplay controls muted loop playsinline>
+            <source src="./static/videos/video-RAL-submission_6.mp4" type="video/mp4">
           </video>
+          <p class="title is-5">Prompt:"Grasp the timer"</p>
         </div>
-        <div class="item item-timer">
-          <video poster="" id="timer" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/video-RAL-submission_6.mp4"
-                    type="video/mp4">
+        <div class="column is-one-third">
+          <video poster="" id="eraser" autoplay controls muted loop playsinline>
+            <source src="./static/videos/video-RAL-submission_7.mp4" type="video/mp4">
           </video>
+          <p class="title is-5">Prompt:"Grasp the eraser"</p>
         </div>
-        <div class="item item-eraser">
-          <video poster="" id="eraser" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/video-RAL-submission_7.mp4"
-                    type="video/mp4">
+        <div class="column is-one-third">
+          <video poster="" id="black-tool" autoplay controls muted loop playsinline>
+            <source src="./static/videos/video-RAL-submission_8.mp4" type="video/mp4">
           </video>
+          <p class="title is-5">Prompt:"Grasp the black tool"</p>
         </div>
-        <div class="item item-black-tool">
-          <video poster="" id="black-tool" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/video-RAL-submission_8.mp4"
-                    type="video/mp4">
+        <div class="column is-one-third">
+          <video poster="" id="drill" autoplay controls muted loop playsinline>
+            <source src="./static/videos/video-RAL-submission_9.mp4" type="video/mp4">
           </video>
+          <p class="title is-5">Prompt:"Grasp the drill"</p>
         </div>
-        <div class="item item-drill">
-          <video poster="" id="drill" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/video-RAL-submission_9.mp4"
-                    type="video/mp4">
+        <div class="column is-one-third is-offset-one-third">
+          <video poster="" id="silver-block" autoplay controls muted loop playsinline>
+            <source src="./static/videos/video-RAL-submission_10.mp4" type="video/mp4">
           </video>
-        </div>
-        <div class="item item-silver-block">
-          <video poster="" id="silver-block" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/video-RAL-submission_10.mp4"
-                    type="video/mp4">
-          </video>
+          <p class="title is-5">Prompt:"Grasp the silver block"</p>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
 <section class="section">
   <div class="container is-max-widescreen">
@@ -277,83 +295,8 @@
             <br>
 
 </section>
-<!-- End image carousel -->
+<!-- End Result -->
 
-
-
-
-<!-- Youtube video -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container"> -->
-      <!-- Paper video. -->
-      <!-- <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video"> -->
-            <!-- Youtube embed code here -->
-            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%"> -->
-            <!-- Your video file here -->
-            <!-- <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%"> -->
-            <!-- Your video file here -->
-            <!-- <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\ -->
-            <!-- Your video file here -->
-            <!-- <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section> -->
-<!--End paper poster -->
 
 
 <!--BibTex citation -->
@@ -376,23 +319,6 @@
   </div>
 </section>
 
-  <!-- <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            We borrow the page template from  <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page. Special thanks to them!
-            <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</footer> -->
 
 <!-- Statcounter tracking code -->
   
