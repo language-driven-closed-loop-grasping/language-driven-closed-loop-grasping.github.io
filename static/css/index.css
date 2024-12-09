@@ -135,7 +135,10 @@ body {
 
 .logo-container {
   display: flex;
+  justify-content: center;
   align-items: center;
+  gap: 20px; /* Adjust spacing between logos */
+  margin-top: 20px; /* Optional margin */
 }
 
 .logo-container img {
